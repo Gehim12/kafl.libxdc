@@ -641,7 +641,7 @@ __attribute__((hot)) disas_result_t trace_disassembler(disassembler_t* self, uin
 
 	*failed_page = 0;
 
-	if (unlikely(kh_size(self->trace_cache) > MAX_TRACE_CACHE_SIZE)) {
+	if (unlikely(kh_size(self->trace_cache->lookup) > MAX_TRACE_CACHE_SIZE)) {
 		reset_trace_cache(self);
 	}
 
