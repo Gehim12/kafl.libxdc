@@ -488,7 +488,7 @@ static inline void inform_disassembler_target_ip(disassembler_t* self, disassemb
 }
 
 #define MAX_LOOP_COUNT 80000
-#define MAX_TRACE_CACHE_SIZE 500000
+#define MAX_TRACE_CACHE_SIZE 2000000
 
 #pragma GCC diagnostic push
 #pragma GCC diagnostic ignored "-Wpedantic"
